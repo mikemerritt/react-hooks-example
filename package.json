@@ -1,0 +1,17 @@
+{
+  "name": "react-hooks-example",
+  "version": "1.0.0",
+  "description": "Example react application that uses web hooks and functions in place of class based components.",
+  "private": false,
+  "author": "Mike Merritt <emmjemm@gmail.com>",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikemerritt/react-hooks-example.git"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=10"
+  }
+}
