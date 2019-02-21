@@ -5,6 +5,7 @@
   "private": false,
   "author": "Mike Merritt <emmjemm@gmail.com>",
   "scripts": {
+    "start": "webpack-dev-server --progress --colors --mode development --config webpack.config.js",
     "build": "webpack --progress --colors --mode production --config webpack.config.js"
   },
   "repository": {
@@ -14,7 +15,8 @@
   "dependencies": {},
   "devDependencies": {
     "webpack": "^4.29.5",
-    "webpack-cli": "^3.2.3"
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.0"
   },
   "engines": {
     "node": ">=10"
