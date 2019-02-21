@@ -10,5 +10,19 @@ module.exports = {
     contentBase: path.resolve(__dirname, './public'),
     historyApiFallback: true,
     port: '3000'
+  },
+  module: {
+    loaders: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: [/node_modules/],
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react']
+          }
+        }
+      }
+    ]
   }
-}
+};
