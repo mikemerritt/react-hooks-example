@@ -4,13 +4,18 @@
   "description": "Example react application that uses web hooks and functions in place of class based components.",
   "private": false,
   "author": "Mike Merritt <emmjemm@gmail.com>",
-  "scripts": {},
+  "scripts": {
+    "build": "webpack --progress --colors --mode production --config webpack.config.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mikemerritt/react-hooks-example.git"
   },
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3"
+  },
   "engines": {
     "node": ">=10"
   }
