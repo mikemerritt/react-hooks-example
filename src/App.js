@@ -1,15 +1,12 @@
 import React from 'react';
-import { Provider } from 'react-redux';
-import store from './store';
+import { Router } from '@reach/router';
 
 import Dashboard from './modules/Dashboard';
 
-const App = () => {
-  return (
-    <Provider store={store}>
-      <Dashboard />
-    </Provider>
-  );
-};
+const App = () => (
+  <Router>
+    <Dashboard path="/" />
+  </Router>
+);
 
 export default App;
