@@ -9,6 +9,8 @@
     "classes": true
   },
   "rules": {
-    "comma-dangle": 0
+    "comma-dangle": 0,
+    "max-len": ["error", 120],
+    "react/jsx-filename-extension": 0
   }
 }

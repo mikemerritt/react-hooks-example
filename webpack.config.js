@@ -4,6 +4,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, './public/dist'),
+    publicPath: '/dist',
     filename: 'bundle.js'
   },
   devServer: {
@@ -12,7 +13,7 @@ module.exports = {
     port: '3000'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: [/node_modules/],
