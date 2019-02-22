@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   entry: './src/index.js',
@@ -10,8 +11,15 @@ module.exports = {
   devServer: {
     contentBase: path.resolve(__dirname, './public'),
     historyApiFallback: true,
-    port: '3000'
+    port: '3000',
+    hot: true
   },
+  resolve: {
+    extensions: ['*', '.js', '.jsx']
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ],
   module: {
     rules: [
       {

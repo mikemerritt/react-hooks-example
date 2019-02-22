@@ -5,3 +5,5 @@ import App from './App';
 const mountApp = document.getElementById('root');
 
 render(<App />, mountApp);
+
+module.hot.accept();
