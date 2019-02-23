@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from '@reach/router';
+import Remarkable from 'remarkable';
 
 const Article = ({ articles, id }) => {
   const article = articles[id];
+  const md = new Remarkable();
 
   return (
     <div>
@@ -11,7 +13,7 @@ const Article = ({ articles, id }) => {
         <span role="img" aria-label="Back" style={{ fontSize: 28 }}>👈</span>
       </Link>
       <h1>{article.title}</h1>
-      <p>{article.body}</p>
+      <div dangerouslySetInnerHTML={{ __html: md.render(article.body) }} />
     </div>
   );
 };

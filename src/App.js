@@ -1,6 +1,5 @@
 import React, { useReducer } from 'react';
 import { Router } from '@reach/router';
-// import uuid from 'uuid/v4';
 
 import Dashboard from './modules/Dashboard';
 import Article from './modules/Article';
@@ -8,7 +7,7 @@ import NewArticle from './modules/NewArticle';
 
 const initialState = {
   articles: {
-    'adb04bd5-e86c-4103-9913-f14aec08a3c4': { title: 'Test Article', body: 'this is the body' },
+    'adb04bd5-e86c-4103-9913-f14aec08a3c4': { title: 'Test Article', body: '## Wow a heading\nWhats going on' },
     '044cd3bc-a229-488c-9ecf-8e23d1bb10fc': { title: 'Another Article', body: 'Woah this body is pretty cool!' }
   }
 };
